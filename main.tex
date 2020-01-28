@@ -1,0 +1,295 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation
+% LaTeX Template
+% Version 1.0 (10/11/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+
+\documentclass{beamer}
+\mode<presentation> {
+
+% The Beamer class comes with a number of default slide themes
+% which change the colors and layouts of slides. Below this is a list
+% of all the themes, uncomment each in turn to see what they look like.
+
+%\usetheme{default}
+%\usetheme{AnnArbor}
+%\usetheme{Antibes}
+%\usetheme{Bergen}
+%\usetheme{Berkeley}����JFIF����C
+%\usetheme{Berlin}
+%\usetheme{Boadilla}
+%\usetheme{CambridgeUS}
+%\usetheme{Copenhagen}
+%\usetheme{Darmstadt}
+%\usetheme{Dresden}
+%\usetheme{Frankfurt}
+%\usetheme{Goettingen}
+%\usetheme{Hannover}
+%\usetheme{Ilmenau}
+%\usetheme{JuanLesPins}
+%\usetheme{Luebeck}
+%\usetheme{Madrid}
+%\usetheme{Malmoe}
+%\usetheme{Marburg}
+%\usetheme{Montpellier}
+\usetheme{PaloAlto}
+%\usetheme{Pittsburgh}
+%\usetheme{Rochester}
+%\usetheme{Singapore}
+%\usetheme{Szeged}
+%\usetheme{Warsaw}
+
+% As well as themes, the Beamer class has a number of color themes
+% for any slide theme. Uncomment each of these in turn to see how it
+% changes the colors of your current slide theme.
+
+%\usecolortheme{albatross}
+%\usecolortheme{beaver}
+%\usecolortheme{beetle}
+%\usecolortheme{crane}
+%\usecolortheme{dolphin}
+%\usecolortheme{dove}
+%\usecolortheme{fly}
+%\usecolortheme{lily}
+%\usecolortheme{orchid}
+%\usecolortheme{rose}
+%\usecolortheme{seagull}
+%\usecolortheme{seahorse}
+\usecolortheme{whale}
+%\usecolortheme{wolverine}
+
+%\setbeamertemplate{footline} % To remove the footer line in all slides uncomment this line
+\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
+
+%\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
+}
+
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+\usepackage{amsmath}
+\usepackage{subfig}
+\usepackage{caption}
+\usepackage{mathabx}
+\usepackage{wrapfig}
+\usepackage{tikz}
+\usepackage{animate}
+\usepackage{adjustbox}
+\usetikzlibrary{shapes.geometric, arrows}
+%\usepackage{subcaption}
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+\title[]{``Club of looking for jobs'' and duration of unemployment of females} % The short title appears at the bottom of every slide, the full title is only on the title page
+
+\author{Alexander Dudoladov, Adel Khusnulgatin, Alexander Petrov} % Your name
+\institute[New Economic School] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+{
+New Economic School \\ % Your institution for the title page
+\medskip
+%\textit{john@smith.com} % Your email address
+}
+\date{\today} % Date, can be changed to a custom date
+
+\begin{document}
+
+\begin{frame}
+\titlepage % Print the title page as the first slide
+\end{frame}
+
+%--------------------------------------------------------------------------------
+\section{Introduction}
+
+%GitHub check
+
+\begin{frame}{Hypotheses}
+\begin{block}{What is the impact of participation in "Club of looking for jobs" program on duration of unemployment of females?}
+\begin{itemize}
+       \item Program helps individuals to find a job
+       \item Negative impact on observed duration of unemployment in the given sample
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}{Club of looking for jobs}
+\begin{block}{Target audience}
+\begin{itemize}
+       \item Currently unemployed
+       \item Lost their motivation
+\end{itemize}
+\end{block}
+
+\begin{block}{Main goal: help people to find appropriate jobs}
+\begin{itemize}
+       \item Business speech
+       \item Make people believe in competence
+       \item Teach how to set and achieve a goal
+       \item Motivate to find a job
+\end{itemize}
+\end{block}
+
+\end{frame}
+
+\begin{frame}{Other conjectures}
+\begin{block}{Self selection?}
+\begin{itemize}
+    \item Those who join the club are different from others
+    \item This decision is endogenous
+\end{itemize}
+\end{block}
+
+\begin{block}{Biased estimates?}
+\begin{itemize}
+    \item Clubs might be helpful but estimates are biased
+    \item Control group should be marginally close to the club
+\end{itemize}
+\end{block}
+\end{frame}
+
+\section{Data}
+
+\begin{frame}{Data}
+\begin{block}{Voronezh dataset, single record observations}
+\begin{itemize}
+    \item Covered period: 1994 - 2000
+        \begin{itemize}
+            \item  240 726 observations in total
+            \item  145 796 females
+            \item  2 290 participants of the club
+            \item  1 933 females in the club
+        \end{itemize}
+\end{itemize}
+\end{block}
+\end{frame}
+
+
+
+
+
+
+
+%---------------------------------------------------------------------------
+\begin{frame}{Summary statistics}
+\centering
+\resizebox{0.9\linewidth}{!}{
+\input{sum.tex}
+}
+\end{frame}
+
+
+
+
+\begin{frame}{Distribution by status}
+    \includegraphics[scale = 0.7]{images/status.pdf}
+\end{frame}
+
+\begin{frame}{Distribution by education}
+    \includegraphics[scale = 0.7]{images/obrzw.pdf}
+\end{frame}
+
+\begin{frame}{Distribution by unemployment category}
+    \includegraphics[scale = 0.7]{images/unem_cat.pdf}
+\end{frame}
+
+
+%---------------------------------------------------------------------------
+
+\section{Analysis}
+
+\begin{frame}{Before estimation}
+    \centering
+    \includegraphics[scale=0.7]{images/surv_fun.pdf}
+\end{frame}
+
+
+
+
+%---------------------------------------------------------------------------
+
+\begin{frame}{Adding controls}
+\centering
+\input{dif_fe.tex}
+
+\end{frame}
+
+
+
+%---------------------------------------------------------------------------
+
+\begin{frame}{Reduced sample}
+\centering
+\resizebox{0.9\linewidth}{!}{
+\input{unobserv_het.tex}
+}
+\end{frame}
+
+%---------------------------------------------------------------------------
+
+\begin{frame}{Adding controls (without ivdiwen)}
+\centering
+\resizebox{0.9\linewidth}{!}{
+\input{unobserv_het_noiv.tex}
+}
+
+\end{frame}
+
+%---------------------------------------------------------------------------
+
+\begin{frame}{Survival function (Cox)}
+\begin{figure}[ht]
+        \begin{minipage}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[width=\textwidth]{images/surv_cos.pdf}
+            \caption{Reduced sample}
+        \end{minipage}
+        \hspace{0.5cm}
+        \begin{minipage}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[width=\textwidth]{images/surv_cos_full.pdf}
+            \caption{Full sample}
+        \end{minipage}
+    \caption{Survival function after Cox estimation (reduced sample, control for unemployment status, district fixed effects, and other controls).}
+    \end{figure}
+
+\end{frame}
+
+%---------------------------------------------------------------------------
+
+\begin{frame}{Attempt at finding a control group}
+\centering
+\resizebox{0.9\linewidth}{!}{
+\input{control_gr.tex}
+}
+
+\end{frame}
+
+%---------------------------------------------------------------------------
+
+\begin{frame}{Full output for Weibull}
+
+\centering
+
+\adjustbox{
+max totalheight=\textheight, max width=\textwidth, keepaspectratio}{
+    \input{table1.tex}
+    }
+
+\end{frame}
+
+
+%----------------------------------------------------------------------------
+
+
+
+\end{document}
+%---------------------------------------------------------------------------

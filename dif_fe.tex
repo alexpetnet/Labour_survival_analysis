@@ -1,0 +1,24 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{3}{c}}
+\toprule
+                &\multicolumn{1}{c}{Cox}&\multicolumn{1}{c}{Cox}&\multicolumn{1}{c}{Cox}\\
+\cmidrule{2-4}
+ & (1) & (2) & (3) \\
+\midrule
+=1 if Klub Ishushikh rabotu&    -0.87***&    -0.82***&    -0.87***\\
+                &  (0.054)   &  (0.054)   &  (0.055)   \\
+\addlinespace
+number of dependants&    -0.26***&    -0.26***&    -0.24***\\
+                & (0.0077)   & (0.0077)   & (0.0078)   \\
+
+\midrule 
+Age & Yes & Yes & Yes \\
+Education & Yes & Yes & Yes \\
+Unemployment status & No & Yes & Yes \\
+District FE & No & No & Yes \\
+\midrule
+Observations    &    89137   &    89043   &    89043   \\
+\bottomrule
+\end{tabular}
+}
